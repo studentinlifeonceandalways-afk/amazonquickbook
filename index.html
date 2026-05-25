@@ -875,7 +875,7 @@
                 <a href="#how-it-works">How it Works</a>
                 <a href="#testimonials">Reviews</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#" class="install-btn" id="installBtnNav">
+                <a href="https://chromewebstore.google.com/detail/amazon-quick-book-multi-d/flmgbncninhjglohmmmgjbfibbblacba" target="_blank" rel="noopener noreferrer" class="install-btn" id="installBtnNav">
                     <i class="fab fa-chrome"></i> Add to Chrome
                 </a>
             </div>
@@ -901,7 +901,7 @@
                     The ultimate Amazon bookmark manager across 22+ marketplaces. Save products, track prices in any currency, and never lose a product you love.
                 </p>
                 <div class="hero-buttons animate-fade-up" style="animation-delay: 0.2s;">
-                    <a href="#" class="btn-primary" id="installBtnHero">
+                    <a href="https://chromewebstore.google.com/detail/amazon-quick-book-multi-d/flmgbncninhjglohmmmgjbfibbblacba" target="_blank" rel="noopener noreferrer" class="btn-primary" id="installBtnHero">
                         <i class="fab fa-chrome"></i> Add to Chrome - Free
                     </a>
                     <a href="#features" class="btn-secondary">
@@ -1138,7 +1138,7 @@
                 <li><i class="fas fa-check-circle"></i> Live exchange rates</li>
                 <li><i class="fas fa-check-circle"></i> Priority support</li>
             </ul>
-            <a href="#" class="btn-primary" id="installBtnPricing" style="width: 100%; justify-content: center;">
+            <a href="https://chromewebstore.google.com/detail/amazon-quick-book-multi-d/flmgbncninhjglohmmmgjbfibbblacba" target="_blank" rel="noopener noreferrer" class="btn-primary" id="installBtnPricing" style="width: 100%; justify-content: center;">
                 <i class="fab fa-chrome"></i> Install Now
             </a>
         </div>
@@ -1150,7 +1150,7 @@
     <div class="container">
         <h2>Ready to supercharge your Amazon shopping?</h2>
         <p>Join thousands of smart shoppers using Amazon Quick Book</p>
-        <a href="#" class="btn-primary" id="installBtnCTA">
+        <a href="https://chromewebstore.google.com/detail/amazon-quick-book-multi-d/flmgbncninhjglohmmmgjbfibbblacba" target="_blank" rel="noopener noreferrer" class="btn-primary" id="installBtnCTA">
             <i class="fab fa-chrome"></i> Add to Chrome - It's Free
         </a>
     </div>
@@ -1187,10 +1187,9 @@
             </div>
             <div class="footer-links">
                 <h4>Legal</h4>
-                <a href="https://quickbookamazon.com/privacy-policy.html" target="_blank" >Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
                 <a href="#">Cookie Policy</a>
-                <a href="https://quickbookamazon.com/suppport.html">Support</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -1217,44 +1216,6 @@
             navbar.classList.remove('scrolled');
         }
     });
-
-    // Install Button Handlers
-    const installButtons = ['installBtnNav', 'installBtnHero', 'installBtnPricing', 'installBtnCTA'];
-    
-    installButtons.forEach(btnId => {
-        const btn = document.getElementById(btnId);
-        if (btn) {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                showDemoToast();
-            });
-        }
-    });
-
-    // Demo toast notification
-    function showDemoToast() {
-        const toast = document.createElement('div');
-        toast.innerHTML = `
-            <div style="background: #f59e0b; color: white; padding: 12px 20px; border-radius: 12px; font-size: 14px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);">
-                <i class="fas fa-code-branch"></i>
-                <div>
-                    <strong>Demo Version</strong><br>
-                    <span style="font-size: 12px;">Install the extension from the Chrome Web Store when published!</span>
-                </div>
-            </div>
-        `;
-        toast.style.position = 'fixed';
-        toast.style.bottom = '24px';
-        toast.style.right = '24px';
-        toast.style.zIndex = '10000';
-        toast.style.animation = 'fadeUp 0.3s ease';
-        document.body.appendChild(toast);
-        
-        setTimeout(() => {
-            toast.style.opacity = '0';
-            setTimeout(() => toast.remove(), 300);
-        }, 3000);
-    }
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1290,7 +1251,7 @@
     });
 </script>
 
-<!-- Floating Action Button -->
+<!-- Floating Action Badge -->
 <div style="position: fixed; bottom: 24px; left: 24px; z-index: 1000;">
     <div style="background: white; border-radius: 40px; padding: 8px 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-size: 12px; display: flex; align-items: center; gap: 8px; border: 1px solid #fed7aa;">
         <i class="fas fa-chrome" style="color: #f59e0b;"></i>
